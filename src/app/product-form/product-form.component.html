@@ -1,0 +1,63 @@
+<div class="form-wrapper">
+  <div class="form-container">
+    <div class="logo-container">
+      <img src="https://cdn-icons-png.flaticon.com/128/5713/5713443.png" alt="Honey Sounds" class="logo" />
+      <h1>Honey Sounds</h1>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" #productForm="ngForm" class="product-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="product.name"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          [(ngModel)]="product.price"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="imagelink">Image Link:</label>
+        <input
+          type="text"
+          id="imagelink"
+          name="imagelink"
+          [(ngModel)]="product.imagelink"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="buylink">Buy Link:</label>
+        <input
+          type="text"
+          id="buylink"
+          name="buylink"
+          [(ngModel)]="product.buylink"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="button-group">
+        <button type="submit" [disabled]="!productForm.form.valid" class="submit-button">Add Product</button>
+        <a routerLink="/" class="cancel-button">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>

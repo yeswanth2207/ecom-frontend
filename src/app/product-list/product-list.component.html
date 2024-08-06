@@ -1,0 +1,76 @@
+<div class="landing-page">
+    <!-- Logo and Header Section -->
+    <header class="header">
+      <div class="logo-container">
+        <img src="https://cdn-icons-png.flaticon.com/128/5713/5713443.png" alt="Honey Sounds" class="logo" />
+        <h1>Honey Sounds</h1>
+      </div>
+      <div class="header-content">
+        <h2>Welcome to Honey Sounds</h2>
+        <p>Your destination for premium earpods at unbeatable prices. Enjoy superior audio with our high-quality earpods, designed for comfort and performance.</p>
+        <a href="#products" class="explore-button">Explore Our Collection</a>
+      </div>
+    </header>
+  
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>Why Choose Honey Sounds?</h2>
+      <div class="placards">
+        <div class="placard">
+          <h3>Premium Sound Quality</h3>
+          <p>Experience immersive audio with every beat.</p>
+        </div>
+        <div class="placard">
+          <h3>Comfortable Fit</h3>
+          <p>Designed for extended wear without discomfort.</p>
+        </div>
+        <div class="placard">
+          <h3>Affordable Prices</h3>
+          <p>Get top-quality earpods without breaking the bank.</p>
+        </div>
+        <div class="placard">
+          <h3>Exceptional Customer Support</h3>
+          <p>Our team is here to assist you every step of the way.</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <h2>Our Best Deals</h2>
+      <div class="product-list">
+        <div *ngFor="let product of products" class="product-card">
+          <a [href]="product.buylink" target="_blank">
+            <img [src]="product.imagelink" [alt]="product.name" class="product-image" />
+          </a>
+          <h3>{{ product.name }}</h3>
+          <p class="price">{{ product.price | currency }}</p>
+          <a [href]="product.buylink" target="_blank">
+            <button class="buy-now-button">Buy Now</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <h2>What Our Customers Are Saying</h2>
+      <div class="testimonial">
+        <p>"The sound quality of the earpods is incredible! I can't believe I got such a great product at this price." - Alex R.</p>
+      </div>
+      <div class="testimonial">
+        <p>"I love how comfortable these earpods are. I've used them for hours without any discomfort." - Jamie L.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent customer service and a fantastic product. Highly recommend!" - Taylor W.</p>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+      <a href="mailto:support@honeysounds.com" class="contact-button">Contact Us</a>
+    </section>
+  </div>
+  

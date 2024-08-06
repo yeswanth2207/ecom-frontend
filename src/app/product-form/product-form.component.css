@@ -1,0 +1,159 @@
+/* Ensure the body takes full height and uses flexbox */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center the form wrapper in the viewport */
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f9;
+  }
+  
+  /* Styling for the form container */
+  .form-container {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Logo container styling */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: rgba(0, 0, 128, 0.9); /* Primary color */
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  /* Content section styling */
+  .content {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 128, 0.8); /* Primary color */
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Product form styling */
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 128, 0.8); /* Primary color */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f1c40f; /* Prominent color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #f39c12; /* Darker shade of yellow */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Cancel button styling */
+  .cancel-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 128, 0.8); /* Prominent color */
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: rgba(0, 0, 128, 0.9); /* Darker shade */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 20px;
+    }
+    
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    
+    h1 {
+      font-size: 20px;
+    }
+    
+    .submit-button, .cancel-button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  

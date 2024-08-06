@@ -1,0 +1,315 @@
+/* Importing Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 128,0.7); /* Dark background for contrast */
+  color: #fff; /* White text for better readability */
+  text-align: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-content {
+  padding-top: 80px;
+}
+
+.header-content h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #f1c40f; /* Bright accent color */
+}
+
+.header-content p {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  background-color: #f1c40f; /* Bright accent color */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #f39c12; /* Darker shade of accent color */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.placards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.placard {
+  background: #fff; /* White background for placards */
+  border: 2px solid #f1c40f; /* Bright accent color */
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placard:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.placard h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.placard p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Products Section */
+.products {
+  padding: 80px 20px;
+}
+
+.products h2 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #f1c40f; /* Bright accent color */
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff; /* White card background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.buy-now-button {
+  background-color: #f1c40f; /* Bright accent color */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #f39c12; /* Darker shade of accent color */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Testimonials Section */
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .testimonials h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+    text-align: center;
+  }
+  
+  .testimonial {
+    background: #fff; /* White background for testimonials */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  .testimonial p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+  }
+  
+  .contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-button {
+    background-color: #f1c40f; /* Bright accent color */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #f39c12; /* Darker shade of accent color */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .placards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Additional Styling */
+  html, body {
+    height: 100%;
+  }
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Improved Card Layout */
+  .product-card {
+    background: #fff; /* White card background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  
